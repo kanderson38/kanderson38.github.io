@@ -1,0 +1,79 @@
+body {
+    background-image: url('../images/bg_pattern.jpg');
+    min-height: 100vh;
+    display: grid;
+    grid-template: 0px 1fr 50px / 200px 1fr;
+    margin: auto;
+    padding: auto;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+header h1, header img {
+    display: none;
+}
+
+nav {
+    padding-top: 70px;
+}
+
+nav ul :first-child a {
+    color:  rgb(80, 55, 3);
+}
+
+h1 {
+    font-size: 5em;
+    line-height: 2em;
+}
+
+h1, h2 {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;  
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    nav  {
+        padding: 0;
+    }
+
+    article h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav li {
+        display: inline;
+        font-size: .8em;
+    }
+
+    nav ul::before {
+        display: none;
+    }
+
+    main {
+        grid-column: span 2;
+        min-height: 90vh;
+    }
+
+
+    footer {
+        height: 50px;
+    }
+  }

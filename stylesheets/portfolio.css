@@ -1,0 +1,7 @@
+nav ul :nth-child(2) a {
+    color:  rgb(80, 55, 3);
+}
+
+#applelogo {
+    height: 32px;
+}
